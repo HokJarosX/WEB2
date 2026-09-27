@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.project-card button {
+    align-self: flex-start;
+}
+
+aside {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
