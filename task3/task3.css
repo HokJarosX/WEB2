@@ -1,0 +1,101 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    border-bottom: 1px solid black;
+}
+
+nav a{
+    background-color: rgba(255, 250, 250, 0.874);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+    
+}
+
+nav a:hover{
+    background-color: rgba(173, 173, 173, 0.874);
+}
+
+body {
+    background-color: rgb(215, 166, 41);
+    font-family: Arial, sans-serif;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "dst forest darksouls"
+        "minecraft factorio cuphead"
+        "stardew etg roblox";
+
+    gap: 20px;
+}
+
+.gallery-item:nth-child(1) {
+    grid-area: dst;
+}
+
+.gallery-item:nth-child(2) {
+    grid-area: forest;
+}
+
+.gallery-item:nth-child(3) {
+    grid-area: darksouls;
+}
+
+.gallery-item:nth-child(4) {
+    grid-area: minecraft;
+}
+
+.gallery-item:nth-child(5) {
+    grid-area: factorio;
+}
+
+.gallery-item:nth-child(6) {
+    grid-area: cuphead;
+}
+
+.gallery-item:nth-child(7) {
+    grid-area: stardew;
+}
+
+.gallery-item:nth-child(8) {
+    grid-area: etg;
+}
+
+.gallery-item:nth-child(9) {
+    grid-area: roblox;
+}
+
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.gallery-item:hover .caption {
+    display: block;
+}
